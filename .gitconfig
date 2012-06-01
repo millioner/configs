@@ -1,0 +1,18 @@
+[user]
+	name = Millioner
+	email = millioner.bbb@gmail.com
+
+[alias]
+            st = status
+            ci = commit
+            br = branch
+            co = checkout
+            di = diff
+            plog = log --pretty=format:'%h %Cblue%cn %Creset%cr %Cgreen%s'
+
+[color]
+    diff = auto
+    branch = auto
+    status = auto
+    interactive = auto
+
