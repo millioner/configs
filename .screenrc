@@ -1,0 +1,11 @@
+autodetach on
+startup_message off
+pow_detach_msg "~~* adios *~~"
+
+setenv LC_CTYPE en_US.UTF-8
+defutf8 on
+
+hardstatus alwayslastline
+hardstatus string "%{= bw}[ %H ][%= %-Lw%?(%n*%f %t)%?%+Lw%?%?%= ][ %l ][ %C:%s %Y-%m-%d ]"
+
+vbell on
