@@ -145,11 +145,13 @@ PROMPT_COMMAND=prompt_command
 # set new b/w prompt (will be overwritten in 'prompt_command' later for color prompt)
 PS1='\u@\h:\w\$ '
 
+# VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 # python virtualenv
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 	export PROJECT_HOME=~/workspace/
 	export WORKON_HOME=~/workspace/python/virtualenvs/
 	export VIRTUAL_ENV_DISABLE_PROMPT=1
+	VIRTUALENVWRAPPER_PYTHON=/usr/bin/pythonw
 	source /usr/local/bin/virtualenvwrapper.sh
 fi
 
@@ -157,9 +159,9 @@ fi
 export GREP_OPTIONS="--color=auto"
 
 # bash completion
-#if [ -f `brew --prefix`/etc/bash_completion ]; then
-#	. `brew --prefix`/etc/bash_completion
-#fi
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+	. `brew --prefix`/etc/bash_completion
+fi
 
 # autocomplete ssh hosts
 complete -W "$(echo `cat ~/.ssh/config | grep -iE '^(Host|HostName) ' | awk '{print $2}'`)" ssh
