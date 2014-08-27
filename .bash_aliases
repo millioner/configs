@@ -31,9 +31,6 @@ div() {
 # instant server
 alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 
-# my secret command :)
-#alias fact='/home/millioner/Dropbox/Documents/Settings/fake_activity/fake_activity.sh'
-
 # ANDROID
 #export ANDROID_HOME=/opt/android-sdk
 #PATH=$PATH{}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
