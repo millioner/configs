@@ -44,3 +44,5 @@ alias redis='/opt/redis/src/redis-server /opt/redis/redis.conf'
 # START SOLR ON MAC
 alias solr='cd /usr/local/Cellar/solr/4.7.2/libexec/example/ && java -Dsolr.solr.home=multicore -jar start.jar'
 
+# python specific
+alias del_pyc="find . -iname '*.pyc' -delete "  # find and remove all *.pyc files
