@@ -38,7 +38,7 @@ alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 #alias adb-restart=' sudo $ANDROID_HOME/platform-tools/adb kill-server && sudo $ANDROID_HOME/platform-tools/adb start-server'
 
 
-START REDIS BY HANDS
+# START REDIS BY HANDS
 alias redis='/opt/redis/src/redis-server /opt/redis/redis.conf'
 
 # START SOLR ON MAC
