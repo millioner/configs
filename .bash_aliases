@@ -31,18 +31,11 @@ div() {
 # instant server
 alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 
-# ANDROID
-#export ANDROID_HOME=/opt/android-sdk
-#PATH=$PATH{}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-#alias sudo-adb='sudo $ANDROID_HOME/platform-tools/adb start-server'
-#alias adb-restart=' sudo $ANDROID_HOME/platform-tools/adb kill-server && sudo $ANDROID_HOME/platform-tools/adb start-server'
-
-
 # START REDIS BY HANDS
-alias redis='/opt/redis/src/redis-server /opt/redis/redis.conf'
+alias redis='/opt/redis/redis-2.8.9/src/redis-server'
 
 # START SOLR ON MAC
 alias solr='cd /usr/local/Cellar/solr/4.7.2/libexec/example/ && java -Dsolr.solr.home=multicore -jar start.jar'
 
 # python specific
-alias del_pyc="find . -iname '*.pyc' -delete "  # find and remove all *.pyc files
+alias clean_pyc="find . -iname '*.pyc' -delete "  # find and remove all *.pyc files

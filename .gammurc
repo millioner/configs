@@ -1,9 +1,0 @@
-[gammu]
-port=/dev/ttyUSB3
-connection=at
-name=huawei
-model=e1550
-[gammu1]
-port=00:1B:59:8A:BF:C3
-connection=blueat
-name=Sony Ericsson W610i/W610c
