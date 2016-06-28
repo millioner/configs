@@ -176,3 +176,6 @@ fi
 
 # this is for delete words by ^W
 tty -s && stty werase ^- 2>/dev/null
+
+# Postgres.app console command for MacOS
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
