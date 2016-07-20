@@ -164,7 +164,10 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 # autocomplete ssh hosts
-complete -W "$(echo `cat ~/.ssh/config | grep -iE '^(Host|HostName) ' | awk '{print $2}'`)" ssh
+cat ~/.ssh/config ~/workspace/python/netquity/fabfile/ssh_config > ~/.ssh/generated_config
+chmod 600 ~/.ssh/generated_config
+alias ssh='ssh -F ~/.ssh/generated_config'
+complete -W "$(echo `cat ~/.ssh/generated_config | grep -iE '^(Host|HostName) ' | awk '{print $2}'`)" ssh
 
 # autocomplete django-admin commands
 . ~/.django_bash_completion

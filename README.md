@@ -1,4 +1,4 @@
 configs
 =======
 
-Just some my configs
+Just some of my configs
