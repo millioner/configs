@@ -1,6 +1,7 @@
 [user]
 	name = Millioner
 	email = millioner.bbb@gmail.com
+	signingkey = EB4F8A77CE257EB9
 
 [alias]
             st = status
@@ -18,3 +19,5 @@
 
 [push]
 	default = matching
+[commit]
+	gpgsign = true

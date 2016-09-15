@@ -13,3 +13,7 @@ fi
 
 # JAVA
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+export NVM_DIR="/Users/millioner/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source ~/.nvm/nvm.sh
