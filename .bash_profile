@@ -1,4 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells. see /usr/share/doc/bash/examples/startup-files (in the package bash-doc) for examples
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -182,3 +181,5 @@ tty -s && stty werase ^- 2>/dev/null
 
 # Postgres.app console command for MacOS
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+source ~/.bashrc
