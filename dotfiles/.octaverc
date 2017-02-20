@@ -1,0 +1,10 @@
+# not sure those lines are really working, but now octave plot is working
+# so I'll just leave it here
+setenv("GNUTERM", "X11")
+graphics_toolkit("gnuplot")
+
+# Oh, just some notes how I've made it working:
+# here is a link helped me - http://stackoverflow.com/questions/34926856/octave-freeze-when-it-needs-to-plot
+# and here is a commands I used
+# > brew reinstall octave --with-gui   # maybe it's not necessary, not sure again
+# > brew reinstall gnuplot --with-x11  # this one definitely did the job 
