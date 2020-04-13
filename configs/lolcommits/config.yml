@@ -1,0 +1,21 @@
+---
+loltext:
+  :enabled: true
+  :message:
+    :color: "#AAAAAA"
+    :font: "/Users/millioner/.lolcommits/Raleway-Light.ttf"
+    :position: 
+    :size: 24
+    :stroke_color: none
+    :uppercase: 
+  :sha:
+    :color: "#AAAAAA"
+    :font: "/Users/millioner/.lolcommits/Raleway-Light.ttf"
+    :position: 
+    :size: 18
+    :stroke_color: none
+    :uppercase: 
+  :overlay:
+    :enabled: false
+  :border:
+    :enabled: false
