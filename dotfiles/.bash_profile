@@ -144,14 +144,14 @@ PROMPT_COMMAND=prompt_command
 # set new b/w prompt (will be overwritten in 'prompt_command' later for color prompt)
 PS1='\u@\h:\w\$ '
 
-# VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+# VIRTUALENVWRAPPER_PYTHON=/Users/millioner/.pyenv/versions/3.7.4/bin/python
 # python virtualenv
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 	export PROJECT_HOME=~/workspace/
 	export WORKON_HOME=~/workspace/python/virtualenvs/
 	export VIRTUAL_ENV_DISABLE_PROMPT=1
-	VIRTUALENVWRAPPER_PYTHON=/usr/bin/pythonw
-	source /usr/local/bin/virtualenvwrapper.sh
+	VIRTUALENVWRAPPER_PYTHON=/Users/millioner/.pyenv/versions/3.7.4/bin/python
+	source /Users/millioner/.pyenv/versions/3.7.4/bin/virtualenvwrapper.sh
 fi
 
 # grep colorize
@@ -163,7 +163,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 # autocomplete ssh hosts
-cat ~/.ssh/config ~/workspace/python/netquity/fabfile2/fabfile/ssh_config ~/workspace/python/netquity/fabfile/docker_for_aws/ssh_config > ~/.ssh/generated_config
+cat ~/.ssh/config ~/workspace/python/netquity/fabfile/ssh_config > ~/.ssh/generated_config
 chmod 600 ~/.ssh/generated_config
 alias ssh='ssh -F ~/.ssh/generated_config'
 complete -W "$(echo `cat ~/.ssh/generated_config | grep -iE '^(Host|HostName) ' | awk '{print $2}'`)" ssh
