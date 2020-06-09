@@ -36,7 +36,7 @@ alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 #alias redis-cli='/opt/redis-5.0.8/src/redis-cli'
 
 # START SOLR ON MAC
-alias solr='cd /usr/local/Cellar/solr/4.7.2/libexec/example/ && java -Dsolr.solr.home=multicore -jar start.jar'
+# alias solr='cd /usr/local/Cellar/solr/4.7.2/libexec/example/ && java -Dsolr.solr.home=multicore -jar start.jar'
 
 # python specific
 alias clean_pyc="find . -iname '*.pyc' -delete "  # find and remove all *.pyc files

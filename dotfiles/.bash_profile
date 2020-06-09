@@ -144,14 +144,13 @@ PROMPT_COMMAND=prompt_command
 # set new b/w prompt (will be overwritten in 'prompt_command' later for color prompt)
 PS1='\u@\h:\w\$ '
 
-# VIRTUALENVWRAPPER_PYTHON=/Users/millioner/.pyenv/versions/3.7.4/bin/python
 # python virtualenv
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+if [ -f ~/.pyenv/versions/3.8.2/bin/virtualenvwrapper.sh ]; then
 	export PROJECT_HOME=~/workspace/
 	export WORKON_HOME=~/workspace/python/virtualenvs/
 	export VIRTUAL_ENV_DISABLE_PROMPT=1
-	VIRTUALENVWRAPPER_PYTHON=/Users/millioner/.pyenv/versions/3.7.4/bin/python
-	source /Users/millioner/.pyenv/versions/3.7.4/bin/virtualenvwrapper.sh
+	VIRTUALENVWRAPPER_PYTHON=~/.pyenv/versions/3.8.2/bin/python
+	source ~/.pyenv/versions/3.8.2/bin/virtualenvwrapper.sh
 fi
 
 # grep colorize
@@ -181,5 +180,16 @@ tty -s && stty werase ^- 2>/dev/null
 
 # Postgres.app console command for MacOS
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+eval "$(pyenv init -)"
+
+# libxml
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+
+# gpg stuff
+export GPG_TTY=$(tty)
 
 source ~/.bashrc

@@ -3,18 +3,18 @@ loltext:
   :enabled: true
   :message:
     :color: "#AAAAAA"
-    :font: "/Users/millioner/.lolcommits/Raleway-Light.ttf"
-    :position: 
+    :font: "~/.lolcommits/Raleway-Light.ttf"
+    :position:
     :size: 24
     :stroke_color: none
-    :uppercase: 
+    :uppercase:
   :sha:
     :color: "#AAAAAA"
-    :font: "/Users/millioner/.lolcommits/Raleway-Light.ttf"
-    :position: 
+    :font: "~/.lolcommits/Raleway-Light.ttf"
+    :position:
     :size: 18
     :stroke_color: none
-    :uppercase: 
+    :uppercase:
   :overlay:
     :enabled: false
   :border:
