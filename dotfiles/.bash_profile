@@ -6,7 +6,6 @@
 PATH=$HOME/.bin:$PATH
 PATH=/usr/local/bin:$PATH
 PATH=/usr/local/sbin:$PATH
-PATH=/usr/local/mysql/bin:$PATH
 
 # don't put duplicate lines in the history
 export HISTCONTROL=ignoreboth,erasedups
@@ -166,14 +165,6 @@ cat ~/.ssh/config ~/workspace/python/netquity/fabfile/ssh_config > ~/.ssh/genera
 chmod 600 ~/.ssh/generated_config
 alias ssh='ssh -F ~/.ssh/generated_config'
 complete -W "$(echo `cat ~/.ssh/generated_config | grep -iE '^(Host|HostName) ' | awk '{print $2}'`)" ssh
-
-# autocomplete django-admin commands
-. ~/.django_bash_completion
-
-# bash aliases
-if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
-fi
 
 # this is for delete words by ^W
 tty -s && stty werase ^- 2>/dev/null
