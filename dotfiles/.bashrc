@@ -7,6 +7,9 @@ if [ -f ~/.bash_private ]; then
 	. ~/.bash_private
 fi
 
+if [ -f ~/.bash_profile ]; then
+	source ~/.bash_profile
+fi
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

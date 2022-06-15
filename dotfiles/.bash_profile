@@ -182,5 +182,3 @@ export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 
 # gpg stuff
 export GPG_TTY=$(tty)
-
-source ~/.bashrc

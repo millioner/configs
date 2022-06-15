@@ -28,6 +28,9 @@ div() {
 # instant server
 alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
 
+# pylint tweak
+alias pylint='pylint --jobs=1 --enable=W0614'
+
 # START REDIS MANUALLY
 #alias redis='/opt/redis-5.0.8/src/redis-server'
 #alias redis-cli='/opt/redis-5.0.8/src/redis-cli'
