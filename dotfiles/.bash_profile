@@ -161,9 +161,6 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 # autocomplete ssh hosts
-cat ~/.ssh/config ~/workspace/python/netquity/fabfile/ssh_config > ~/.ssh/generated_config
-chmod 600 ~/.ssh/generated_config
-alias ssh='ssh -F ~/.ssh/generated_config'
 complete -W "$(echo `cat ~/.ssh/generated_config | grep -iE '^(Host|HostName) ' | awk '{print $2}'`)" ssh
 
 # this is for delete words by ^W
